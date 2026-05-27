@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <!-- Link CSS File -->
+    <link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form>
+
+        <input type="text" name="name" placeholder="Enter your name" required><br>
+
+        <input type="email" name="email" placeholder="Enter your email" required><br>
+
+        <input type="tel" name="phone" placeholder="Enter your phone number" required><br>
+
+         <input type="date" name="dob" required><br>
+
+        <select name="course" required>
+            <option value="">Select a course</option>
+            <option value="web development">Web Development</option>
+            <option value="data science">Data Science</option>
+            <option value="graphic design">Graphic Design</option>
+            <option value="digital marketing">Digital Marketing</option>
+            <option value="cyber security">Cyber Security</option>
+            <option value="aiml">AI/ML</option>
+        </select><br>
+
+        <textarea name="message" placeholder="Enter your message" rows="4" required></textarea><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <br><br>
+
+    <table border="1">
+        <h2>Student Information</h2>
+
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Course</th>
+            <th>City</th>
+        </tr>
+
+        <tr>
+            <td>Vaibhavi</td>
+            <td>vaibhavi@example.com</td>
+            <td>Web Development</td>
+            <td>Pune</td>
+        </tr>
+
+        <tr>
+            <td>Rohit</td>
+            <td>rohit@example.com</td>
+            <td>Data Science</td>
+            <td>Mumbai</td>
+        </tr>
+
+        <tr>
+            <td>Ayush</td>
+            <td>ayush@example.com</td>
+            <td>Graphic Design</td>
+            <td>Delhi</td>
+        </tr>
+
+        <tr>
+            <td>Priya</td>
+            <td>priya@example.com</td>
+            <td>Digital Marketing</td>
+            <td>Chennai</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
