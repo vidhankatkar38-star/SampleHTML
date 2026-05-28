@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Webpage</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            font-family: Arial;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        .navbar{
+            background-color: navy;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        /* Section Heading */
+        h2{
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* Flexbox */
+        .flex{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card{
+            background: white;
+            padding: 20px;
+            width: 150px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Grid */
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box{
+            background-color: skyblue;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Position Examples */
+
+        .static{
+            background: red;
+            color: white;
+            padding: 15px;
+            margin: 20px;
+            position: static;
+        }
+
+        .relative{
+            background: green;
+            color: white;
+            padding: 15px;
+            margin: 20px;
+            position: relative;
+            left: 30px;
+        }
+
+        .absolute-container{
+            position: relative;
+            height: 150px;
+            background: lightgray;
+            margin: 20px;
+        }
+
+        .absolute{
+            background: blue;
+            color: white;
+            padding: 15px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .fixed{
+            background: purple;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .sticky{
+            background: orange;
+            color: white;
+            padding: 15px;
+            margin: 20px;
+            position: sticky;
+            top: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Flexbox -->
+    <h2>Flexbox Section</h2>
+
+    <div class="flex">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+
+    <!-- Grid -->
+    <h2>Grid Section</h2>
+
+    <div class="grid">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+    </div>
+
+    <!-- Position -->
+    <h2>CSS Position</h2>
+
+    <div class="static">Static Position</div>
+
+    <div class="relative">Relative Position</div>
+
+    <div class="sticky">Sticky Position</div>
+
+    <div class="absolute-container">
+        <div class="absolute">Absolute Position</div>
+    </div>
+
+    <div class="fixed">Fixed Position</div>
+
+</body>
+</html>
